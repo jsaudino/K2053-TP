@@ -1,6 +1,12 @@
 #ifndef SCANNER_H_ 
 #define SCANNER_H_
 
-void getToken();
+enum tokens {
+    FDT,
+    SEP,
+    CAD
+};
+
+int get_token(char lexema[]);
 
 #endif
